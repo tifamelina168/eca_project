@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilustrasi Smile Pro Infinite — Rizki</title>
+<style>
+  :root{
+    --bg:#0b1220;--panel:#111c33;--panel2:#16243f;--ink:#eef3fb;--muted:#9fb0cc;
+    --gold:#d9a441;--gold-soft:#f0c976;--line:rgba(255,255,255,.08);--green:#1ebe7a;--red:#e06262;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#16243f 0%,var(--bg) 55%);
+    color:var(--ink);line-height:1.6;min-height:100vh;
+    display:flex;justify-content:center;padding:26px 16px 56px;
+  }
+  .wrap{width:100%;max-width:580px}
+  .kicker{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);padding:5px 11px;border-radius:999px;margin-bottom:16px}
+  h1{font-size:26px;line-height:1.28;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+  h1 .hl{color:var(--gold-soft)}
+  .lede{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+  h2{font-size:16px;margin:30px 0 12px;letter-spacing:.01em}
+  h2 .n{color:var(--gold)}
+
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .chip{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12.5px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+
+  .hero{background:linear-gradient(135deg,rgba(217,164,65,.13),rgba(217,164,65,.03));border:1px solid rgba(217,164,65,.3);border-radius:16px;padding:20px;text-align:center;margin-bottom:8px}
+  .hero .lbl{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .hero .up{font-size:40px;font-weight:800;color:var(--gold-soft);margin:6px 0;letter-spacing:-.02em}
+  .hero .sub{font-size:13.5px;color:var(--muted)}
+
+  .premi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:14px}
+  .premi .row{display:flex;justify-content:space-between;font-size:13.5px;padding:6px 0;color:var(--muted)}
+  .premi .row b{color:var(--ink)}
+  .premi .total{border-top:1px solid var(--line);margin-top:8px;padding-top:12px;font-size:15px;color:var(--ink)}
+  .premi .total b{color:var(--gold-soft);font-size:19px}
+
+  .dsc{background:linear-gradient(135deg,rgba(217,164,65,.13),rgba(217,164,65,.03));border:1px solid rgba(217,164,65,.4);border-radius:14px;padding:16px 17px;margin-top:14px}
+  .dhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+  .dname{font-size:14px;font-weight:600;color:var(--ink)}
+  .dpct{font-size:13px;font-weight:700;color:var(--gold-soft);background:rgba(217,164,65,.18);padding:3px 11px;border-radius:999px}
+  .drow{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;color:var(--muted);padding:4px 0}
+  .drow b{color:var(--ink);font-weight:600}
+  .drow b.big{font-size:19px;color:var(--gold-soft);font-weight:700}
+  .drow small{font-size:11px}
+  .dsave{margin-top:9px;padding-top:10px;border-top:1px solid var(--line);font-size:14px;font-weight:700;color:var(--green);text-align:center}
+
+  table{width:100%;border-collapse:collapse;margin:4px 0}
+  th,td{text-align:left;padding:9px 8px;font-size:12.5px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  td:last-child,th:last-child,td:nth-child(3),th:nth-child(3),td:nth-child(4),th:nth-child(4){text-align:right}
+  td b{color:var(--gold-soft)}
+  tr.hi td{background:rgba(217,164,65,.08)}
+  tr:last-child td{border-bottom:none}
+
+  .pc{display:grid;gap:12px;margin-top:6px}
+  .pcard{border-radius:14px;padding:16px 17px;border:1px solid var(--line)}
+  .pcard.pro{background:linear-gradient(135deg,rgba(30,190,122,.08),rgba(30,190,122,.02));border-color:rgba(30,190,122,.3)}
+  .pcard.con{background:linear-gradient(135deg,rgba(224,98,98,.07),rgba(224,98,98,.02));border-color:rgba(224,98,98,.3)}
+  .pcard h4{font-size:14px;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+  .pcard.pro h4{color:var(--green)}
+  .pcard.con h4{color:var(--red)}
+  .pcard ul{margin:0;padding-left:18px}
+  .pcard li{font-size:13px;color:var(--muted);margin-bottom:6px;line-height:1.5}
+  .pcard li b{color:var(--ink)}
+
+  .seg{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+  .seg .s{font-size:12.5px;font-weight:600;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 13px}
+
+  .disc{font-size:11px;color:var(--muted);line-height:1.55;border-top:1px solid var(--line);padding-top:16px;margin-top:28px}
+  .disc b{color:var(--muted)}
+  .sign{text-align:center;margin-top:18px;color:var(--muted);font-size:12.5px}
+  .sign b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="kicker">Ilustrasi · Smile Pro Infinite</span>
+  <h1>Setor 5 tahun, proteksi <span class="hl">Rp 3 Miliar</span> sampai usia 60.</h1>
+  <p class="lede">Disiapkan untuk Rizki (32 th). Angka dari ilustrasi resmi MSIG — pro dan con-nya aku buka semua.</p>
+
+  <div class="facts">
+    <span class="chip">Usia <b>32</b></span>
+    <span class="chip">UP <b>Rp 3 Miliar</b></span>
+    <span class="chip">Bayar <b>5 tahun</b></span>
+    <span class="chip">Proteksi sampai <b>usia 60</b></span>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="lbl">Uang Pertanggungan (aktif sejak hari-1)</div>
+    <div class="up">Rp 3.000.000.000</div>
+    <div class="sub">Dibayar penuh ke ahli waris kalau terjadi sesuatu — atau ke kamu sendiri kalau hidup sampai usia 60.</div>
+  </div>
+
+  <div class="premi">
+    <div class="row"><span>Premi per tahun</span><b>Rp 168.207.000</b></div>
+    <div class="row"><span>Lama bayar</span><b>5 tahun</b></div>
+    <div class="row total"><span>Total setoran</span><b>Rp 841.035.000</b></div>
+  </div>
+
+  <!-- DISKON TITIPAN PREMI -->
+  <div class="dsc">
+    <div class="dhead">
+      <span class="dname">Bonus: bayar 5 tahun sekaligus di muka</span>
+      <span class="dpct">−5,21%</span>
+    </div>
+    <div class="drow"><span>Bayar tahunan (5×)</span><b>Rp 841 jt</b></div>
+    <div class="drow"><span>Bayar sekaligus di muka <small>(estimasi)</small></span><b class="big">± Rp 797 jt</b></div>
+    <div class="dsave">Hemat ± Rp 44 juta 🔥</div>
+  </div>
+  <p style="font-size:12px;color:var(--muted);margin-top:10px">
+    Diskon titipan premi <b>5,21%</b> berlaku kalau bayar 5 tahun sekaligus di muka (Smile Pro Infinite usia-60, MPP 5 thn). Angka Rp 797jt di atas <b>estimasi</b> — angka pasti setelah diskon harus dari ilustrasi resmi MSIG versi titipan premi.
+  </p>
+
+  <!-- PROS CON: produk ini vs nabung sendiri -->
+  <h2><span class="n">1.</span> Asuransi ini vs nabung / investasi sendiri</h2>
+  <div class="pc">
+    <div class="pcard pro">
+      <h4>✓ Kelebihan</h4>
+      <ul>
+        <li><b>Proteksi Rp 3 M aktif sejak hari pertama.</b> Setor baru 168jt, kalau terjadi sesuatu ahli waris tetap terima Rp 3 M penuh.</li>
+        <li><b>Nilai tunai dijamin</b> — bukan tergantung naik-turun pasar. Di usia 60, balik penuh Rp 3 M.</li>
+        <li><b>Disiplin terkunci</b> — cukup 5 tahun, sisanya jalan sendiri sampai 60.</li>
+      </ul>
+    </div>
+    <div class="pcard con">
+      <h4>✕ Kekurangan (biar fair)</h4>
+      <ul>
+        <li><b>Nilai tunai awal lambat.</b> Setor 841jt dalam 5 th, tapi nilai tunai th-5 baru ±103jt. Kalau butuh duit cepat & ditebus awal, rugi besar.</li>
+        <li><b>Bukan alat cuan.</b> Nabung/investasi sendiri bisa kasih return lebih tinggi — tapi nggak ada proteksi Rp 3 M kalau kamu kenapa-kenapa di tengah jalan.</li>
+        <li><b>Komitmen dana besar</b> — 168jt/th bukan angka kecil.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROS CON: 5 vs 10 th -->
+  <h2><span class="n">2.</span> Bayar 5 tahun vs 10 tahun</h2>
+  <div class="pc">
+    <div class="pcard pro">
+      <h4>✓ Bayar 5 tahun</h4>
+      <ul>
+        <li><b>Cepat lunas</b> — beban selesai dalam 5 tahun, sisanya tenang.</li>
+        <li>Cocok kalau income lagi kuat & mau cepat "bebas".</li>
+      </ul>
+    </div>
+    <div class="pcard con">
+      <h4>✕ Bayar 10 tahun</h4>
+      <ul>
+        <li><b>Premi/tahun lebih ringan</b> — beban tahunan lebih kecil, tapi total bayar lebih lama.</li>
+        <li>Cocok kalau mau cashflow lega, walau "lunas"-nya mundur.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROS CON: UP besar vs kecil -->
+  <h2><span class="n">3.</span> UP besar vs kecil</h2>
+  <div class="pc">
+    <div class="pcard pro">
+      <h4>✓ UP besar (3 M)</h4>
+      <ul>
+        <li><b>Proteksi & warisan maksimal.</b> Keluarga pegang Rp 3 M.</li>
+        <li>Cocok kalau kamu tulang punggung dengan tanggungan besar.</li>
+      </ul>
+    </div>
+    <div class="pcard con">
+      <h4>✕ UP kecil (500jt–1 M)</h4>
+      <ul>
+        <li><b>Premi jauh lebih ringan</b> — proteksi tetap ada, beban lebih masuk akal.</li>
+        <li>Cocok kalau prioritasnya proteksi dasar, bukan warisan besar.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TABEL PEMBANDING -->
+  <h2><span class="n">4.</span> Pembanding premi (per tahun)</h2>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:12px">Makin muda usia masuk & makin panjang masa bayar, makin ringan preminya. Baris yang disorot = profil yang dekat dengan Rizki.</p>
+  <table>
+    <tr><th>Umur</th><th>Bayar</th><th>UP 500jt</th><th>UP 1 M</th><th>UP 3 M</th></tr>
+    <tr><td>55</td><td>5 th</td><td>37,5jt</td><td>71,3jt</td><td>214jt</td></tr>
+    <tr><td>55</td><td>10 th</td><td>22,2jt</td><td>42,3jt</td><td>126,8jt</td></tr>
+    <tr class="hi"><td>60</td><td>5 th</td><td>29,5jt</td><td>56,1jt</td><td><b>168,2jt</b></td></tr>
+    <tr><td>60</td><td>10 th</td><td>17,5jt</td><td>33,3jt</td><td>99,9jt</td></tr>
+    <tr><td>75</td><td>5 th</td><td>13,1jt</td><td>23,3jt</td><td>61,4jt</td></tr>
+    <tr><td>75</td><td>10 th</td><td>7,6jt</td><td>13,6jt</td><td>35,6jt</td></tr>
+  </table>
+
+  <p class="disc">
+    *Angka premi UP 3M / 5 tahun (Rp 168.207.000) dikutip dari RIPLAY Personal MSIG No. 260629.0351.18383.985, tertanggung Rizki Fernando Putra, usia 32, sampai usia 60. Tabel pembanding berdasarkan data premi per usia masuk. Semua angka <b>simulasi, bukan janji/jaminan</b> dan bukan bagian dari Polis — ketentuan final mengikuti Polis yang diterbitkan & proses underwriting. Mulai 1 Juli 2026 ketentuan diskon/UP dapat berubah. Berlaku s/d 13 Jul 2026.
+  </p>
+  <p class="sign">Disiapkan oleh <b>Milzon</b> · MSIG Financial Advisor · @milzon.latief.fin</p>
+</div>
+</body>
+</html>
